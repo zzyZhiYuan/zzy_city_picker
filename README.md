@@ -1,15 +1,36 @@
 # zzy_city_picker
 
-A new Flutter project.
+## 简介
 
-## Getting Started
+这是一个，中国大陆用户使用的城市选择器，提供三种选择方式，选择省份，选择省市，选择省市区
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 摘要
 
+```dart
+
+final result = await ZzyCityPicker.showPicker(context, currentResult: selected, type: ZzyCityPickerType.p);
+if (result != null) {
+    setState(() {
+      selected = result;
+    });
+}
+
+
+```
+
+
+## 用法
+
+```dart
+//选择省
+ZzyCityPicker.showPicker(context, currentResult: selected, type: ZzyCityPickerType.p);
+
+//选择省市
+ZzyCityPicker.showPicker(context, currentResult: selected, type: ZzyCityPickerType.pc);
+
+
+//选择省市区（type 默认值为 ZzyCityPickerType.pca，所以选择省市区的时候，可以传type）
+ZzyCityPicker.showPicker(context, currentResult: selected);
+
+```

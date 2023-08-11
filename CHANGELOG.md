@@ -1,3 +1,3 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* TODO: 第一版发布，后面有其他功能拓展的话，再说吧

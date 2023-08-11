@@ -1,7 +1,7 @@
 name: zzy_city_picker
 description: 这是一个中国人用的城市选择器
 version: 0.0.1
-homepage: https://e.coding.net/zzysiyou/zzy_tools/zzy_city_picker.git
+homepage: https://zzysiyou.coding.net/public
 
 environment:
   sdk: '>=3.0.3 <4.0.0'
